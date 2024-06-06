@@ -148,7 +148,7 @@
     
      \textbf{Languages}{: C/C++, NASM, Python, \LaTeX, DOT} \\
      
-     \textbf{Tools}{: Git/GitHub, Linux, VS Code, Make, GDB, Kcachegrind, perf, hotspot, IDA}
+     \textbf{Tools}{: Git/GitHub, Linux, VS Code, Make, GDB, Kcachegrind, perf, hotspot, IDA, SDL, SFML}
      
      % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
      
@@ -162,56 +162,43 @@
     \resumeSubHeadingListStart
 
         \resumeProjectHeading
-        {\textbf{CPU} {\color{blue}\href{https://github.com/aidenfmunro/CPU}{[GitHub]}} $|$ \footnotesize\emph{C}}{Oct. 2023}
+        {\textbf{CPU} {\color{blue}\href{https://github.com/aidenfmunro/CPU}{[GitHub]}} $|$ \footnotesize\emph{C/C++, SDL}}{Oct. 2023}
         \resumeItemListStart
-            \resumeItem{This project is dedicated to creating my own simplified virtual machine that simulates the work of a single processor unit. The project is split into three seperate programs: an assembler, a disassembler, and the machine itself. The assembly language is customly made.}
+            \resumeItem{An implementation of my own simplified virtual machine that simulates the work of a single processor unit. The project is split into three seperate programs: an assembler, a disassembler, and the machine itself. The assembly language is made by me. As an additional task the ASCII represantation of the famous Bad Apple video was ran on my CPU using it's RAM as video memory.}
           \resumeItemListEnd
     
         \resumeProjectHeading
-        {\textbf{ChatBuzz} $|$ \footnotesize\emph{TypeScript, HTML/CSS, Webpack, API (Twitch), Git, Unix Shell, VS Code}}{May 2023 -- Present}
+        {\textbf{Cache-friendly doubly linked list} {\color{blue}\href{https://github.com/aidenfmunro/LinkedList}{[GitHub]}} $|$ \footnotesize\emph{C/C++, DOT}}{Nov. 2023}
         \resumeItemListStart
-            \resumeItem{Developed a full-stack web application for Twitch livestreamers to display repeated chat messages on OBS}
-            \resumeItem{Experimented with Twitch API's OAuth Access Tokens to get chat data from the given channel}
-            \resumeItem{Collaborated with livestreamers to get feedback and suggested features}
-            \resumeItem{Solved problems relating to asynchronous tasks}
+            \resumeItem{A cache friendly doubly linked list is a data structure based on nodes.
+            In a cache friendly doubly linked list, each node contains pointers to the previous and next nodes in the list, allowing for efficient traversal in both directions. Additionally, the nodes are arranged contiguously in memory, minimizing the number of cache misses when accessing consecutive nodes. Also the canonical version of the linked list was made. For better debugging experience DOT language was used to dump images of the current state of the linked list.}
           \resumeItemListEnd
           
-      \resumeProjectHeading
-        {\textbf{FoodDropper} $|$ \footnotesize\emph{Java, Maven, API (Spigot), Git, IntelliJ IDEA}}{Aug. 2022}
+        \resumeProjectHeading
+        {\textbf{Programming language}  {\color{blue}\href{https://github.com/aidenfmunro/Scotlang}{[GitHub]}} $|$ \footnotesize\emph{C/C++, DOT}}{Feb. 2024}
         \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to limit players to one way of replenishing their hunger bar}
-            \resumeItem{Used persistent data containers to save and load data, ensuring that it persists across plugin resets}
-            \resumeItem{Optimized UX e.g. sound design, food drop timing, supplied saturation level, and addressed potential workarounds}
+            \resumeItem{My Scottish programming language. It consists of a Tokenizer, Parser \& Compiler. The Tokenizer reads the source file and creates token. The Parser uses recursive descent algorithm to build an Abstract Syntax Tree. The Compiler then analyzes the AST and translates it into instructions of my assembly language.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Mandelbrot Set}  {\color{blue}\href{https://github.com/aidenfmunro/MandelbrotSet}{[GitHub]}} $|$ \footnotesize\emph{C/C++, SFML}}{Mar. 2024}
+        \resumeItemListStart
+            \resumeItem{Visualization of the Mandelbrot fractal. SIMD instructions were used to optimize image processing.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Hash Table optimization}  {\color{blue}\href{https://github.com/aidenfmunro/HashTable}{[GitHub]}} $|$ \footnotesize\emph{C/C++, Python, NASM, GCC inline assembly, perf, hotspot}}{Apr. 2024}
+        \resumeItemListStart
+            \resumeItem{Hash Table data structure implementation using my linked list. This project is split into 2 parts: Hash functions analysis \& Hash Table optimization. Histograms of different hash distributions were made using matplotlib in python. Further optimizations were made using GCC inline assembly, assembly written function \& intrinsics that were analyzed using hotspot \& perf.}
         \resumeItemListEnd
           
     \resumeSubHeadingListEnd
 
-% -------------------- EXPERIENCE --------------------
-\section{Experience}
-  \resumeSubHeadingListStart
+% -------------------- Soft skills --------------------
+\section{Soft skills}
+    \begin{itemize}
+        \item Adaptability, self motivation, attention to detail, verbal communication, emotional intelligence, work ethic, resilience, humility. 
+    \end{itemize}
 
-          \resumeProjectHeading
-          {\textbf{Competitive Programming Club} $|$ \footnotesize\emph{Member}\vspace{8pt}}{Sept. 2023 -- Present}
-          {\small{Involved in the club centered around Competitive Programming}}
-
-          \resumeProjectHeading
-          {\textbf{Apex Tutoring}\vspace{8pt} $|$ \footnotesize\emph{Tutor}}{2019 -- Present}
-          \small{Routinely tutor K--12 students in math, coding, etc.}
-
-          \resumeProjectHeading
-          {\textbf{Luigi Team Charity} $|$ \footnotesize\emph{Volunteer, Manager}\vspace{8pt}}{2018 -- Present}
-          {\small{Earned an award for philanthropic hours spent, still giving away 100 stocked backpacks a year}}
-
-        \subsection{Hobbies}
-          
-          \resumeProjectHeading
-          {\textbf{Playing the Drums}\vspace{8pt}}{2013 -- 2019}
-          {\small{Played the drums in symphonic, jazz, and marching bands}}
-
-          \resumeProjectHeading
-          {\textbf{3\textsuperscript{rd} Place Time Keeping Challenge Championship \footnotesize{(Time Keeping Assocation)}}\vspace{8pt}}{Feb. 2022 -- May 2022}
-          {\small{Won \$1500 nationally competing against high school students in counting seconds and minutes}}
-          
-    \resumeSubHeadingListEnd 
 
 \end{document}
